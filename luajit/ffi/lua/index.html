@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `lua` mod in crate `luajit`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, lua">
+
+    <title>luajit::ffi::lua - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Module lua</p><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#constants">Constants</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'><a href='../../index.html'>luajit</a>::<wbr><a href='../index.html'>ffi</a></p><script>window.sidebarCurrent = {name: 'lua', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../../index.html'>luajit</a>::<wbr><a href='../index.html'>ffi</a>::<wbr><a class="mod" href=''>lua</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../src/luajit/ffi/lua.rs.html#1-301' title='goto source code'>[src]</a></span></h1>
+<h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.lua_Debug.html"
+                                  title='struct luajit::ffi::lua::lua_Debug'>lua_Debug</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_ENVIRONINDEX.html"
+                                  title='constant luajit::ffi::lua::LUA_ENVIRONINDEX'>LUA_ENVIRONINDEX</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_ERRERR.html"
+                                  title='constant luajit::ffi::lua::LUA_ERRERR'>LUA_ERRERR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_ERRMEM.html"
+                                  title='constant luajit::ffi::lua::LUA_ERRMEM'>LUA_ERRMEM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_ERRRUN.html"
+                                  title='constant luajit::ffi::lua::LUA_ERRRUN'>LUA_ERRRUN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_ERRSYNTAX.html"
+                                  title='constant luajit::ffi::lua::LUA_ERRSYNTAX'>LUA_ERRSYNTAX</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_GCCOLLECT.html"
+                                  title='constant luajit::ffi::lua::LUA_GCCOLLECT'>LUA_GCCOLLECT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_GCCOUNT.html"
+                                  title='constant luajit::ffi::lua::LUA_GCCOUNT'>LUA_GCCOUNT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_GCCOUNTB.html"
+                                  title='constant luajit::ffi::lua::LUA_GCCOUNTB'>LUA_GCCOUNTB</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_GCRESTART.html"
+                                  title='constant luajit::ffi::lua::LUA_GCRESTART'>LUA_GCRESTART</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_GCSETPAUSE.html"
+                                  title='constant luajit::ffi::lua::LUA_GCSETPAUSE'>LUA_GCSETPAUSE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_GCSETSTEPMUL.html"
+                                  title='constant luajit::ffi::lua::LUA_GCSETSTEPMUL'>LUA_GCSETSTEPMUL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_GCSTEP.html"
+                                  title='constant luajit::ffi::lua::LUA_GCSTEP'>LUA_GCSTEP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_GCSTOP.html"
+                                  title='constant luajit::ffi::lua::LUA_GCSTOP'>LUA_GCSTOP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_GLOBALSINDEX.html"
+                                  title='constant luajit::ffi::lua::LUA_GLOBALSINDEX'>LUA_GLOBALSINDEX</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_HOOKCALL.html"
+                                  title='constant luajit::ffi::lua::LUA_HOOKCALL'>LUA_HOOKCALL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_HOOKCOUNT.html"
+                                  title='constant luajit::ffi::lua::LUA_HOOKCOUNT'>LUA_HOOKCOUNT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_HOOKLINE.html"
+                                  title='constant luajit::ffi::lua::LUA_HOOKLINE'>LUA_HOOKLINE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_HOOKRET.html"
+                                  title='constant luajit::ffi::lua::LUA_HOOKRET'>LUA_HOOKRET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_HOOKTAILRET.html"
+                                  title='constant luajit::ffi::lua::LUA_HOOKTAILRET'>LUA_HOOKTAILRET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_IDSIZE.html"
+                                  title='constant luajit::ffi::lua::LUA_IDSIZE'>LUA_IDSIZE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_MASKCALL.html"
+                                  title='constant luajit::ffi::lua::LUA_MASKCALL'>LUA_MASKCALL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_MASKCOUNT.html"
+                                  title='constant luajit::ffi::lua::LUA_MASKCOUNT'>LUA_MASKCOUNT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_MASKLINE.html"
+                                  title='constant luajit::ffi::lua::LUA_MASKLINE'>LUA_MASKLINE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_MASKRET.html"
+                                  title='constant luajit::ffi::lua::LUA_MASKRET'>LUA_MASKRET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_MINSTACK.html"
+                                  title='constant luajit::ffi::lua::LUA_MINSTACK'>LUA_MINSTACK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_MULTIRET.html"
+                                  title='constant luajit::ffi::lua::LUA_MULTIRET'>LUA_MULTIRET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_OK.html"
+                                  title='constant luajit::ffi::lua::LUA_OK'>LUA_OK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_REGISTRYINDEX.html"
+                                  title='constant luajit::ffi::lua::LUA_REGISTRYINDEX'>LUA_REGISTRYINDEX</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_RELEASE.html"
+                                  title='constant luajit::ffi::lua::LUA_RELEASE'>LUA_RELEASE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_SIGNATURE.html"
+                                  title='constant luajit::ffi::lua::LUA_SIGNATURE'>LUA_SIGNATURE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_TBOOLEAN.html"
+                                  title='constant luajit::ffi::lua::LUA_TBOOLEAN'>LUA_TBOOLEAN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_TFUNCTION.html"
+                                  title='constant luajit::ffi::lua::LUA_TFUNCTION'>LUA_TFUNCTION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_TLIGHTUSERDATA.html"
+                                  title='constant luajit::ffi::lua::LUA_TLIGHTUSERDATA'>LUA_TLIGHTUSERDATA</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_TNIL.html"
+                                  title='constant luajit::ffi::lua::LUA_TNIL'>LUA_TNIL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_TNONE.html"
+                                  title='constant luajit::ffi::lua::LUA_TNONE'>LUA_TNONE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_TNUMBER.html"
+                                  title='constant luajit::ffi::lua::LUA_TNUMBER'>LUA_TNUMBER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_TSTRING.html"
+                                  title='constant luajit::ffi::lua::LUA_TSTRING'>LUA_TSTRING</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_TTABLE.html"
+                                  title='constant luajit::ffi::lua::LUA_TTABLE'>LUA_TTABLE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_TTHREAD.html"
+                                  title='constant luajit::ffi::lua::LUA_TTHREAD'>LUA_TTHREAD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_TUSERDATA.html"
+                                  title='constant luajit::ffi::lua::LUA_TUSERDATA'>LUA_TUSERDATA</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_VERSION.html"
+                                  title='constant luajit::ffi::lua::LUA_VERSION'>LUA_VERSION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_VERSION_NUM.html"
+                                  title='constant luajit::ffi::lua::LUA_VERSION_NUM'>LUA_VERSION_NUM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUA_YIELD.html"
+                                  title='constant luajit::ffi::lua::LUA_YIELD'>LUA_YIELD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_atpanic.html"
+                                  title='fn luajit::ffi::lua::lua_atpanic'>lua_atpanic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_call.html"
+                                  title='fn luajit::ffi::lua::lua_call'>lua_call</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_checkstack.html"
+                                  title='fn luajit::ffi::lua::lua_checkstack'>lua_checkstack</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_close.html"
+                                  title='fn luajit::ffi::lua::lua_close'>lua_close</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_concat.html"
+                                  title='fn luajit::ffi::lua::lua_concat'>lua_concat</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_cpcall.html"
+                                  title='fn luajit::ffi::lua::lua_cpcall'>lua_cpcall</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_createtable.html"
+                                  title='fn luajit::ffi::lua::lua_createtable'>lua_createtable</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_dump.html"
+                                  title='fn luajit::ffi::lua::lua_dump'>lua_dump</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_equal.html"
+                                  title='fn luajit::ffi::lua::lua_equal'>lua_equal</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_error.html"
+                                  title='fn luajit::ffi::lua::lua_error'>lua_error</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_gc.html"
+                                  title='fn luajit::ffi::lua::lua_gc'>lua_gc</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_getallocf.html"
+                                  title='fn luajit::ffi::lua::lua_getallocf'>lua_getallocf</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_getfenv.html"
+                                  title='fn luajit::ffi::lua::lua_getfenv'>lua_getfenv</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_getfield.html"
+                                  title='fn luajit::ffi::lua::lua_getfield'>lua_getfield</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_getgccount.html"
+                                  title='fn luajit::ffi::lua::lua_getgccount'>lua_getgccount</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_getglobal.html"
+                                  title='fn luajit::ffi::lua::lua_getglobal'>lua_getglobal</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_gethook.html"
+                                  title='fn luajit::ffi::lua::lua_gethook'>lua_gethook</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_gethookcount.html"
+                                  title='fn luajit::ffi::lua::lua_gethookcount'>lua_gethookcount</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_gethookmask.html"
+                                  title='fn luajit::ffi::lua::lua_gethookmask'>lua_gethookmask</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_getinfo.html"
+                                  title='fn luajit::ffi::lua::lua_getinfo'>lua_getinfo</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_getlocal.html"
+                                  title='fn luajit::ffi::lua::lua_getlocal'>lua_getlocal</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_getmetatable.html"
+                                  title='fn luajit::ffi::lua::lua_getmetatable'>lua_getmetatable</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_getregistry.html"
+                                  title='fn luajit::ffi::lua::lua_getregistry'>lua_getregistry</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_getstack.html"
+                                  title='fn luajit::ffi::lua::lua_getstack'>lua_getstack</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_gettable.html"
+                                  title='fn luajit::ffi::lua::lua_gettable'>lua_gettable</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_gettop.html"
+                                  title='fn luajit::ffi::lua::lua_gettop'>lua_gettop</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_getupvalue.html"
+                                  title='fn luajit::ffi::lua::lua_getupvalue'>lua_getupvalue</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_insert.html"
+                                  title='fn luajit::ffi::lua::lua_insert'>lua_insert</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_isboolean.html"
+                                  title='fn luajit::ffi::lua::lua_isboolean'>lua_isboolean</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_iscfunction.html"
+                                  title='fn luajit::ffi::lua::lua_iscfunction'>lua_iscfunction</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_isfunction.html"
+                                  title='fn luajit::ffi::lua::lua_isfunction'>lua_isfunction</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_islightuserdata.html"
+                                  title='fn luajit::ffi::lua::lua_islightuserdata'>lua_islightuserdata</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_isnil.html"
+                                  title='fn luajit::ffi::lua::lua_isnil'>lua_isnil</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_isnone.html"
+                                  title='fn luajit::ffi::lua::lua_isnone'>lua_isnone</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_isnoneornil.html"
+                                  title='fn luajit::ffi::lua::lua_isnoneornil'>lua_isnoneornil</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_isnumber.html"
+                                  title='fn luajit::ffi::lua::lua_isnumber'>lua_isnumber</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_isstring.html"
+                                  title='fn luajit::ffi::lua::lua_isstring'>lua_isstring</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_istable.html"
+                                  title='fn luajit::ffi::lua::lua_istable'>lua_istable</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_isthread.html"
+                                  title='fn luajit::ffi::lua::lua_isthread'>lua_isthread</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_isuserdata.html"
+                                  title='fn luajit::ffi::lua::lua_isuserdata'>lua_isuserdata</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_lessthan.html"
+                                  title='fn luajit::ffi::lua::lua_lessthan'>lua_lessthan</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_load.html"
+                                  title='fn luajit::ffi::lua::lua_load'>lua_load</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_loadx.html"
+                                  title='fn luajit::ffi::lua::lua_loadx'>lua_loadx</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_newstate.html"
+                                  title='fn luajit::ffi::lua::lua_newstate'>lua_newstate</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_newtable.html"
+                                  title='fn luajit::ffi::lua::lua_newtable'>lua_newtable</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_newthread.html"
+                                  title='fn luajit::ffi::lua::lua_newthread'>lua_newthread</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_newuserdata.html"
+                                  title='fn luajit::ffi::lua::lua_newuserdata'>lua_newuserdata</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_next.html"
+                                  title='fn luajit::ffi::lua::lua_next'>lua_next</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_objlen.html"
+                                  title='fn luajit::ffi::lua::lua_objlen'>lua_objlen</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_open.html"
+                                  title='fn luajit::ffi::lua::lua_open'>lua_open</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pcall.html"
+                                  title='fn luajit::ffi::lua::lua_pcall'>lua_pcall</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pop.html"
+                                  title='fn luajit::ffi::lua::lua_pop'>lua_pop</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushboolean.html"
+                                  title='fn luajit::ffi::lua::lua_pushboolean'>lua_pushboolean</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushcclosure.html"
+                                  title='fn luajit::ffi::lua::lua_pushcclosure'>lua_pushcclosure</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushcfunction.html"
+                                  title='fn luajit::ffi::lua::lua_pushcfunction'>lua_pushcfunction</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushfstring.html"
+                                  title='fn luajit::ffi::lua::lua_pushfstring'>lua_pushfstring</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushinteger.html"
+                                  title='fn luajit::ffi::lua::lua_pushinteger'>lua_pushinteger</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushlightuserdata.html"
+                                  title='fn luajit::ffi::lua::lua_pushlightuserdata'>lua_pushlightuserdata</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushliteral.html"
+                                  title='fn luajit::ffi::lua::lua_pushliteral'>lua_pushliteral</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushlstring.html"
+                                  title='fn luajit::ffi::lua::lua_pushlstring'>lua_pushlstring</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushnil.html"
+                                  title='fn luajit::ffi::lua::lua_pushnil'>lua_pushnil</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushnumber.html"
+                                  title='fn luajit::ffi::lua::lua_pushnumber'>lua_pushnumber</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushstring.html"
+                                  title='fn luajit::ffi::lua::lua_pushstring'>lua_pushstring</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushthread.html"
+                                  title='fn luajit::ffi::lua::lua_pushthread'>lua_pushthread</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_pushvalue.html"
+                                  title='fn luajit::ffi::lua::lua_pushvalue'>lua_pushvalue</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_rawequal.html"
+                                  title='fn luajit::ffi::lua::lua_rawequal'>lua_rawequal</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_rawget.html"
+                                  title='fn luajit::ffi::lua::lua_rawget'>lua_rawget</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_rawgeti.html"
+                                  title='fn luajit::ffi::lua::lua_rawgeti'>lua_rawgeti</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_rawset.html"
+                                  title='fn luajit::ffi::lua::lua_rawset'>lua_rawset</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_rawseti.html"
+                                  title='fn luajit::ffi::lua::lua_rawseti'>lua_rawseti</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_register.html"
+                                  title='fn luajit::ffi::lua::lua_register'>lua_register</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_remove.html"
+                                  title='fn luajit::ffi::lua::lua_remove'>lua_remove</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_replace.html"
+                                  title='fn luajit::ffi::lua::lua_replace'>lua_replace</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_resume.html"
+                                  title='fn luajit::ffi::lua::lua_resume'>lua_resume</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_setallocf.html"
+                                  title='fn luajit::ffi::lua::lua_setallocf'>lua_setallocf</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_setfenv.html"
+                                  title='fn luajit::ffi::lua::lua_setfenv'>lua_setfenv</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_setfield.html"
+                                  title='fn luajit::ffi::lua::lua_setfield'>lua_setfield</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_setglobal.html"
+                                  title='fn luajit::ffi::lua::lua_setglobal'>lua_setglobal</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_sethook.html"
+                                  title='fn luajit::ffi::lua::lua_sethook'>lua_sethook</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_setlevel.html"
+                                  title='fn luajit::ffi::lua::lua_setlevel'>lua_setlevel</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_setlocal.html"
+                                  title='fn luajit::ffi::lua::lua_setlocal'>lua_setlocal</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_setmetatable.html"
+                                  title='fn luajit::ffi::lua::lua_setmetatable'>lua_setmetatable</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_settable.html"
+                                  title='fn luajit::ffi::lua::lua_settable'>lua_settable</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_settop.html"
+                                  title='fn luajit::ffi::lua::lua_settop'>lua_settop</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_setupvalue.html"
+                                  title='fn luajit::ffi::lua::lua_setupvalue'>lua_setupvalue</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_states.html"
+                                  title='fn luajit::ffi::lua::lua_states'>lua_states</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_strlen.html"
+                                  title='fn luajit::ffi::lua::lua_strlen'>lua_strlen</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_toboolean.html"
+                                  title='fn luajit::ffi::lua::lua_toboolean'>lua_toboolean</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_tocfunction.html"
+                                  title='fn luajit::ffi::lua::lua_tocfunction'>lua_tocfunction</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_tointeger.html"
+                                  title='fn luajit::ffi::lua::lua_tointeger'>lua_tointeger</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_tolstring.html"
+                                  title='fn luajit::ffi::lua::lua_tolstring'>lua_tolstring</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_tonumber.html"
+                                  title='fn luajit::ffi::lua::lua_tonumber'>lua_tonumber</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_topointer.html"
+                                  title='fn luajit::ffi::lua::lua_topointer'>lua_topointer</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_tostring.html"
+                                  title='fn luajit::ffi::lua::lua_tostring'>lua_tostring</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_tothread.html"
+                                  title='fn luajit::ffi::lua::lua_tothread'>lua_tothread</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_touserdata.html"
+                                  title='fn luajit::ffi::lua::lua_touserdata'>lua_touserdata</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_type.html"
+                                  title='fn luajit::ffi::lua::lua_type'>lua_type</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_typename.html"
+                                  title='fn luajit::ffi::lua::lua_typename'>lua_typename</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_upvalueid.html"
+                                  title='fn luajit::ffi::lua::lua_upvalueid'>lua_upvalueid</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_upvalueindex.html"
+                                  title='fn luajit::ffi::lua::lua_upvalueindex'>lua_upvalueindex</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_upvaluejoin.html"
+                                  title='fn luajit::ffi::lua::lua_upvaluejoin'>lua_upvaluejoin</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_xmove.html"
+                                  title='fn luajit::ffi::lua::lua_xmove'>lua_xmove</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lua_yield.html"
+                                  title='fn luajit::ffi::lua::lua_yield'>lua_yield</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lua_Alloc.html"
+                                  title='type luajit::ffi::lua::lua_Alloc'>lua_Alloc</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lua_CFunction.html"
+                                  title='type luajit::ffi::lua::lua_CFunction'>lua_CFunction</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lua_Hook.html"
+                                  title='type luajit::ffi::lua::lua_Hook'>lua_Hook</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lua_Integer.html"
+                                  title='type luajit::ffi::lua::lua_Integer'>lua_Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lua_Number.html"
+                                  title='type luajit::ffi::lua::lua_Number'>lua_Number</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lua_Reader.html"
+                                  title='type luajit::ffi::lua::lua_Reader'>lua_Reader</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lua_State.html"
+                                  title='type luajit::ffi::lua::lua_State'>lua_State</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lua_Writer.html"
+                                  title='type luajit::ffi::lua::lua_Writer'>lua_Writer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../";
+        window.currentCrate = "luajit";
+    </script>
+    <script src="../../../main.js"></script>
+    <script defer src="../../../search-index.js"></script>
+</body>
+</html>
